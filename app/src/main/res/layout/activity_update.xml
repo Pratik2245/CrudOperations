@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+
+        android:layout_height="match_parent"
+        tools:context=".UpdateActivity">
+
+        <com.google.android.material.appbar.MaterialToolbar
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:titleTextColor="@color/white"
+            android:id="@+id/toolbar"
+            android:layout_marginBottom="15dp"
+            app:title="Add Students"
+            android:paddingStart="140dp"
+            android:textAlignment="textEnd"
+            android:background="@color/black"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:text="Update details"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_below="@+id/toolbar"/>
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:paddingStart="10dp"
+            android:textColorHint="@color/black"
+            android:layout_below="@+id/toolbar"
+            android:hint="RollNo"
+            android:layout_marginTop="100dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/custom_edittext"
+            android:id="@+id/roll"
+            android:layout_centerHorizontal="true"
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:paddingStart="10dp"
+            android:layout_below="@+id/roll"
+            android:hint="Division"
+            android:textColorHint="@color/black"
+            android:background="@drawable/custom_edittext"
+            android:id="@+id/division"
+            android:layout_marginBottom="15dp"
+            android:layout_centerHorizontal="true"
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:paddingStart="10dp"
+            android:layout_below="@+id/division"
+            android:hint="EnrollmentNo"
+            android:textColorHint="@color/black"
+            android:background="@drawable/custom_edittext"
+            android:id="@+id/enrollmentNo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            />
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:paddingStart="10dp"
+            android:layout_below="@+id/enrollmentNo"
+            android:hint="NameOfStudent"
+            android:textColorHint="@color/black"
+            android:background="@drawable/custom_edittext"
+            android:id="@+id/nameOfStudent"
+            android:inputType="textPersonName"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            />
+
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:layout_width="350dp"
+            android:layout_height="60dp"
+            android:paddingStart="10dp"
+            android:layout_below="@+id/nameOfStudent"
+            android:layout_marginBottom="15dp"
+            android:hint="Mentor"
+            android:textColorHint="@color/black"
+            android:background="@drawable/custom_edittext"
+            android:id="@+id/mentor"
+
+            android:layout_centerHorizontal="true"
+            />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/mentor"
+            android:gravity="center"
+            android:orientation="horizontal">
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/Update"
+                 android:backgroundTint="@color/black"
+                android:text="Update" />
+
+        </LinearLayout>
+    </RelativeLayout>
